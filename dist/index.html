@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Due Date:</h1>
+      <a target="_blank" href="http://www.w3.org/TR/">GitHub</a>
+    </header>
+    <form class="submit-container">
+      <section class="input-container">
+        <label for="input-day">Day:</label>
+        <select name="days" id="days">
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+        </select>
+      </section>
+      <section class="input-container">
+        <label for="hours">Hour:</label>
+        <select name="hours" id="hours">
+          <option value="9:00">9:00</option>
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+        </select>
+        
+      </section>
+      <section class="input-container">
+        <label for="turnaroundTime">Expected turnaround time(hours:minutes)</label>
+        <input type="text" id="turnaroundTime" name="turnaroundTime"></input>
+      </section>
+      <button id="calcBtn" type="submit">Calculate!</button>
+    </form>
+    <section class="due-dates-container"></section>
+    <button id="clearBtn">Clear</button>
+  </body>
+</html>
